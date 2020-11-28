@@ -35,3 +35,15 @@ cacheSolve <- function(x, ...) {
   x$setinverse(inv)
   inv
 }
+
+##calling the function
+x <- matrix(1:2, 1:2)
+y <- makeCacheMatrix (x)
+cacheSolve(y)
+
+new_matrix <- matrix(3:3, 4:4)
+x$set(new_matrix)
+cacheSolve(x)
+
+
+
